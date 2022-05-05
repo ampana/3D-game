@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(180deg, #b2cdf0, #306ad7);
+      }
+
+      #score {
+        position: absolute;
+        z-index: 1;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        background-color: white;
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+      }
+
+      canvas {
+        width: 100%;
+        height: 100%;
+      }
+
+      #playNow {
+        position: absolute;
+        z-index: 2;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        width: 50%;
+        background-color: white;
+        font-size: 200%;
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+        display: none;
+      }
+
+      #countdown {
+        position: absolute;
+        /* display: block; */
+        float: right;
+        top: 5%;
+        right: 5%;
+        font-family: "Courier New", Courier, monospace;
+        background-color: white;
+      }
+    </style>
+
+    <script src="https://threejs.org/build/three.js"></script>
+
+    <script type="module" src="game.js"></script>
+  </head>
+  <body>
+    <div id="score">Score <span id="numScore">0</span></div>
+    <div id="playNow">PLAY<br />NOW</div>
+    <div id="countdown">00:10s</div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+    .logo { 
+        width: 50%;
+        height: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    .loader {
+      width: 15%;
+      height: 15%;
+      animation: spin 2s linear infinite;
+      display: block;
+        margin-left: auto;
+        margin-right: auto; 
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+
+<script>
+  var timeoutVar;
+  
+  function myFunction() {
+    timeoutVar = setTimeout(showPage, 3000);
+  }
+
+  function showPage() {
+    location.replace("game.html")
+}
+
+  </script>
+
+
+</head>
+<body onload="myFunction()" >
+
+<img class="logo" src="CLLogo.png">
+
+<img class="loader" src="CL.png"></div>
+
+</body>
+</html>
